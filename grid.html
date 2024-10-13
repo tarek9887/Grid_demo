@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridBox</title>
+    <style>
+        
+        .container{
+            display: flex;
+            font-family: 'Lucida Sans';
+            font-size: x-large;
+
+
+            display: grid;
+            
+            grid-template-rows: 100px 250px 100px 80px;
+            grid-template-columns: 300px auto 300px;
+            gap: 30px;
+            
+        }
+        #box-2
+        {
+            color: rgb(10, 153, 189);
+        }
+        
+        .box {
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(177, 238, 36);
+            border: 5px solid rgb(102, 167, 102);
+            border-radius: 10px;
+            
+        }
+        #box-1{
+            
+          
+            grid-column: span 3;
+            background-color: rgb(177, 238, 36);
+        }
+        #box-2{
+            
+            grid-row: span 2;
+            background-color: rgb(177, 238, 36);
+        }
+        #box-3{
+            
+            grid-row: span 2;
+            background-color: rgb(177, 238, 36);
+        }
+        #box-6{
+            
+            grid-column: span 3;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">The header</div>
+        <div class="box" id="box-2">
+            <p><u> Nav 1</u></p>
+            <p><u>Nav 2</u></p>
+            <p><u>Nav 3</u> </p>
+        </div>
+        <div class="box" id="box-3">
+            <h1>Main article area</h1>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ea fuga odit libero velit accusamus quod distinctio minima, pariatur delectus nemo! Hic obcaecati quaerat qui repudiandae enim dolor ratione? Dicta distinctio ducimus, eius omnis sint esse itaque neque magni blanditiis?</p>
+
+            
+        </div>
+        <div class="box" id="box-4">Sidebar</div>
+        <div class="box" id="box-5">Advertising</div>
+        <div class="box" id="box-6">The footer</div>
+ 
+       
+    </div>
+</body>
+
+</html>
